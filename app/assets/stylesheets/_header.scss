@@ -1,0 +1,56 @@
+/* for style check */
+*{
+  border: 0.1px dashed #FFF;
+}
+
+.navbar{
+  
+  background-color: #232F3E;
+
+  .nav-top{
+    height: 39px;
+
+    .nav-top-left{
+      float: left;
+
+      .nav-logo{
+        width: 192px;
+        height: 100%;
+        padding: 13px 18px 0 27px;
+
+        &__base{
+          width: 97px;
+          height: 30px;
+          background-position: -10px -51px;
+          float: left;
+        }
+
+        &__locale{
+          width: 31px;
+          height: 14px;
+          background-position: -270px -69px;
+          margin-top: 6px;
+          float: left;
+        }
+
+        &__prime{
+          width: 45px;
+          height: 17px;
+          background-position: -160px -10px;
+          float: left;
+          position: absolute;
+          top: 32px;
+          left: 92px;
+        }
+
+        .nav-sprite{
+          background-image: url(https://images-fe.ssl-images-amazon.com/images/G/09/gno/sprites/nav-sprite-global_bluebeacon-V3-1x_optimized._CB516557390_.png);
+        }
+      }
+    }
+  }
+
+  .nav-bottom{
+    height: 60px;
+  }
+}
