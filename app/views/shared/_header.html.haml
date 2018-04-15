@@ -1,14 +1,24 @@
 %header
   .navbar
-  
     .nav-top
       .nav-top-left
-        .nav-logo
-          .nav-logo__base.nav-sprite
-          .nav-logo__locale.nav-sprite
-          .nav-logo__prime.nav-sprite
+        = link_to "#", {controller: "home", action: :index} do
+          .nav-logo
+            .nav-logo__base.nav-sprite
+            .nav-logo__locale.nav-sprite
+            .nav-logo__prime.nav-sprite
       .nav-top-center
         .nav-search
       .nav-top-right
-
+        .nav-advertising
+          = link_to "#" do
+            = image_tag("swm-800x78-180301-NonPrime-UdE8l._V500720195_.png", size: "400x39")
     .nav-bottom
+      .nav-bottom-left
+        .nav-receivers-address
+          .nav-receivers-address__icon.nav-sprite
+          .nav-receivers-address__name
+          .nav-receivers-address__zip
+      .nav-bottom-center
+      .nav-bottom-right
+
