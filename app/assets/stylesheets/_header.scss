@@ -1,18 +1,14 @@
 /* for style check */
 *{
-  border: 0.1px dashed #FFF;
+  // border: 0.1px dashed #FFF;
 }
 
 header{
 
   .navbar{
+    min-width: 1000px;
     height: 99px;
-
     background-color: #232F3E;
-
-    .nav-sprite{
-      background-image: url(https://images-fe.ssl-images-amazon.com/images/G/09/gno/sprites/nav-sprite-global_bluebeacon-V3-1x_optimized._CB516557390_.png);
-    }
 
     .nav-top{
       height: 39px;
@@ -22,49 +18,113 @@ header{
         float: left;
         display: inline-block;
 
-        a{
-          display: block;
-        
-          .nav-logo{
-            width: 192px;
-            padding: 13px 18px 0 27px;
+        .nav-logo{
+          width: 192px;
+          float: left;
+          position: relative;
+          padding: 13px 18px 0 27px;
+          display: inline-block;
+          clear: both;
 
-            &__base{
-              width: 97px;
-              height: 30px;
-              background-position: -10px -51px;
-              float: left;
-            }
+          &__base{
+            width: 97px;
+            height: 30px;
+            background-position: -10px -51px;
+            float: left;
+          }
 
-            &__locale{
-              width: 31px;
-              height: 14px;
-              background-position: -270px -69px;
-              margin-top: 6px;
-              float: left;
-            }
+          &__locale{
+            width: 31px;
+            height: 14px;
+            background-position: -270px -69px;
+            margin-top: 6px;
+            float: left;
+          }
 
-            &__prime{
-              width: 45px;
-              height: 17px;
-              background-position: -160px -10px;
-              position: absolute;
-              top: 32px;
-              left: 92px;
-            }
+          &__prime{
+            width: 45px;
+            height: 17px;
+            background-position: -160px -10px;
+            position: absolute;
+            top: 32px;
+            left: 92px;
           }
         }
+        
       }
 
       .nav-top-center{
+        width: calc(100% - 192px - 400px);
         height: 100%;
         float: left;
         display: inline-block;
+        padding: 11px 25px 0 0;
 
         .nav-search{
-          // width: auto;
-          padding: 11px 25px 0 0;
-          // background-color: #fff;
+          height: 35px;
+          background-color: white;
+          border-radius: 4px;
+
+          &__category{
+            width: 69px;
+            height: 35px;
+            padding-left: 5px;
+            background-color: #F3F3F3;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            float: left;
+            padding-top: 2px;
+            position: relative;
+
+            &__text{
+              font-size: 12px;
+              font-family: arial,sans-serif;
+              color: #666;
+              line-height: 33px;
+              margin-left:  5px;
+              margin-right: 21px;
+            }
+
+            &__image{
+              width: 8px;
+              height: 4px;
+              background-position: 0 1000px;
+              position: absolute;
+              top: 16px;
+              right: 9px;
+              border-style: solid;
+              border-color: transparent;
+              border-width: 4px;
+              border-top: 4px solid #666;
+            }
+          }
+
+          &__textbox{
+            width: calc(100% - 69px - 45px);
+            height: 35px;
+            padding: 6px 10px 6px 0;
+
+            &:focus{
+              outline: none;
+            }
+          }
+
+          &__button{
+            width: 45px;
+            height: 35px;
+            background-color: #FEBD69;
+            border-radius: 0 4px 4px 0;
+            float: right;
+            padding-left: 12px;
+            padding-top: 7px;
+
+            &__icon{
+              width: 21px;
+              height: 21px;
+              background-position: -10px -290px;
+            }
+
+          }
         }
       }
 

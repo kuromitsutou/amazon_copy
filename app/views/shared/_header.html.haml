@@ -2,13 +2,20 @@
   .navbar
     .nav-top
       .nav-top-left
-        = link_to "#", {controller: "home", action: :index} do
-          .nav-logo
-            .nav-logo__base.nav-sprite
-            .nav-logo__locale.nav-sprite
-            .nav-logo__prime.nav-sprite
+        .nav-logo
+          = link_to "#", {class: "nav-logo-link", controller: "home", action: :index} do
+            %span.nav-logo__base.nav-sprite
+            %span.nav-logo__locale.nav-sprite
+            %span.nav-logo__prime.nav-sprite
       .nav-top-center
         .nav-search
+          .nav-search__category
+            %span.nav-search__category__text すべて
+            %span.nav-search__category__image.nav-sprite
+
+          %input.nav-search__textbox{type: "text"}
+          .nav-search__button
+            .nav-search__button__icon.nav-sprite
       .nav-top-right
         .nav-advertising
           = link_to "#" do
