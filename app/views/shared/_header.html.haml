@@ -1,5 +1,7 @@
 %header
   .navbar
+
+    / navigation-bar-top
     .nav-top
       .nav-top-left
         .nav-logo
@@ -20,6 +22,8 @@
         .nav-advertising
           = link_to "#" do
             = image_tag("swm-800x78-180301-NonPrime-UdE8l._V500720195_.png", size: "400x39")
+
+    / navigation-bar-bottom
     .nav-bottom
       .nav-bottom-left
         .nav-receivers
@@ -30,4 +34,11 @@
       .nav-bottom-center
 
       .nav-bottom-right
-
+        .nav-global
+        .nav
+        .nav-order-history
+        .nav-prime
+        .nav-cart
+          %span.nav_cart__text カート
+          %span.nav-cart__icon.nav-sprite
+          %span.nav-cart__count 0

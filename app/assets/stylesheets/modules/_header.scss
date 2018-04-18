@@ -10,6 +10,7 @@ header{
     height: 99px;
     background-color: #232F3E;
 
+    // navigation-bar-top
     .nav-top{
       height: 39px;
 
@@ -141,14 +142,15 @@ header{
       }
     }
 
+    // navigation-bar-bottom
     .nav-bottom{
       height: 60px;
+      margin-top: 7px;
 
       .nav-bottom-left{
         width: 192px;
         height: 55px;
         float: left;
-        margin-top: 7px;
 
         .nav-receivers{
           width: 163.34px;
@@ -190,7 +192,48 @@ header{
           &:hover{
             border: 1px solid #4f5965;
             border-radius: 3px;
-            text-decoration: none;
+          }
+        }
+      }
+
+      .nav-bottom-right{
+        width: 533.328px;
+        height: 55px;
+        float: right;
+        padding: 6px 7px 0 32px;
+
+        .nav-cart{
+          width: 106.844px;
+          height: 44px;
+          border: 1px solid #232F3E;
+          float: right;
+
+          &__icon{
+            width: 38px;
+            height: 26px;
+            background-position: -10px -340px;
+            position: relative;
+            left: 10px;
+            top: 11px;
+          }
+
+          &__count{
+            color: #e47911;
+            font-size: 16px;
+            font-family: arial,sans-serif;
+            font-weight: 700;
+            position: relative;
+            left: 23px;
+
+          }
+
+          &__text{
+
+          }
+
+          &:hover{
+            border: 1px solid #4f5965;
+            border-radius: 3px;
           }
         }
       }
