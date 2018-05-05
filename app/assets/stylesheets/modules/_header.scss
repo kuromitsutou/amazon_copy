@@ -260,7 +260,7 @@ header{
   display: inline-block;
   width: 161.53px;
   height: 44px;
-  padding: 7px 0 0 9px;
+  padding: 5px 0 0 9px;
   margin: 7px 1px 0 1px;
   border: 1px solid #232F3E;
   vertical-align: top;
@@ -301,7 +301,7 @@ header{
   display: inline-block;
   width: 77.13px;
   height: 26px;
-  padding: 3px 0 0 9px;
+  padding: 2px 0 0 9px;
   margin: 25px 1px 0 1px;
   border: 1px solid #232F3E;
   vertical-align: top;
@@ -321,15 +321,19 @@ header{
 
 .nav-prime{
   display: inline-block;
-  width: 79.125px;
+  width: 90.13px;
   height: 44px;
+  padding: 10px 0 0 9px;
+  margin: 7px 1px 0 1px;
+  border: 1px solid #232F3E;
+  vertical-align: top;
 
   &__top{
     display: block;
     font-size: 12px;
     font-weight: 400;
     color: #ccc;
-    line-height: 14px;
+    line-height: 10px;
   }
 
   &__bottom{
@@ -337,6 +341,16 @@ header{
     font-weight: 700;
     color: white;
     line-height: 15px;
+  }
+
+  &__image{
+    background-position: 0 1000px;
+    width: 8px;
+    height: 4px;
+    border: 4px solid transparent;
+    border-top: 4px solid #a7acb2;
+    margin: 8px 10px 0 0;
+    float: right;
   }
 
   &:hover{
@@ -350,6 +364,7 @@ header{
   position: relative;
   width: 106.844px;
   height: 44px;
+  top: 6px;
   border: 1px solid #232F3E;
 
   &__icon{
@@ -380,7 +395,6 @@ header{
     font-weight: 700;
     color: white;
     line-height: 15px;
-
   }
 
   &:hover{
