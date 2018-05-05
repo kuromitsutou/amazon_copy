@@ -1,21 +1,21 @@
-.navbar{
+.header-navbar{
   min-width: 1000px;
   height: 99px;
   background-color: #232F3E;
 }
 
 // navigation-bar-top
-.nav-top{
+.header-nav-top{
   height: 39px;
 }
 
-.nav-top-left{
+.header-nav-top-left{
   display: inline-block;
   float: left;
   height: 100%;
 }
 
-.nav-logo{
+.header-nav-logo{
   display: inline-block;
   float: left;
   position: relative;
@@ -48,7 +48,7 @@
   }
 }
 
-.nav-top-center{
+.header-nav-top-center{
   display: inline-block;
   float: left;
   width: calc(100% - 192px - 400px);
@@ -56,7 +56,7 @@
   padding: 11px 25px 0 0;
 }
 
-.nav-search{
+.header-nav-search{
   height: 35px;
   background-color: white;
   border-radius: 4px;
@@ -118,31 +118,31 @@
   }
 }
 
-.nav-top-right{
+.header-nav-top-right{
   display: inline-block;
   float: right;
   min-width: 350px;
   height: 100%;
 }
 
-.nav-advertising{
+.header-nav-advertising{
   width: 400px;
   padding-top: 9px;
 }
 
 // navigation-bar-bottom
-.nav-bottom{
+.header-nav-bottom{
   height: 60px;
   margin-top: 7px;
 }
 
-.nav-bottom-left{
+.header-nav-bottom-left{
   float: left;
   width: 192px;
   height: 55px;
 }
 
-.nav-receivers{
+.header-nav-receivers{
   width: 163.34px;
   height: 44px;
   margin: 6px 0 0 10px;
@@ -184,12 +184,12 @@
   }
 }
 
-.nav-bottom-center{
+.header-nav-bottom-center{
   display: inline-block;
   width: calc(100% - 192px - 533.33px);
 }
 
-.nav-category{
+.header-nav-category{
   display: inline-block;
   width: 109.41px;
   height: 44px;
@@ -220,7 +220,7 @@
   }
 }
 
-.nav-my-store{
+.header-nav-my-store{
   display: inline-block;
   height: 44px;
   padding-top: 10px;
@@ -259,7 +259,7 @@
   }
 }
 
-.nav-bottom-right{
+.header-nav-bottom-right{
   float: right;
   width: 533.33px;
   height: 55px;
@@ -267,7 +267,7 @@
   font-size: 0;
 }
 
-.nav-global{
+.header-nav-global{
   display: inline-block;
   width: 48.7px;
   height: 44px;
@@ -313,7 +313,7 @@
   }
 }
 
-.nav-vertical-border{
+.header-nav-vertical-border{
   display: inline-block;
   width: 0px;
   height: 29px;
@@ -321,7 +321,7 @@
   margin-bottom: 5px;
 }
 
-.nav-account{
+.header-nav-account{
   display: inline-block;
   width: 161.53px;
   height: 44px;
@@ -361,7 +361,7 @@
   }
 }
 
-.nav-order-history{
+.header-nav-order-history{
   display: inline-block;
   width: 77.13px;
   height: 26px;
@@ -383,7 +383,7 @@
   }
 }
 
-.nav-prime{
+.header-nav-prime{
   display: inline-block;
   width: 90.13px;
   height: 44px;
@@ -422,7 +422,7 @@
   }
 }
 
-.nav-cart{
+.header-nav-cart{
   display: inline-block;
   position: relative;
   width: 106.844px;

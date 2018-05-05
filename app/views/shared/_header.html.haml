@@ -1,68 +1,68 @@
 %header
-  .navbar
+  .header-navbar
 
     / navigation-bar-top
-    .nav-top
-      .nav-top-left
-        .nav-logo
-          = link_to "#", {class: "nav-logo-link", controller: "home", action: :index} do
-            %span.nav-logo__base.nav-sprite
-            %span.nav-logo__locale.nav-sprite
-            %span.nav-logo__prime.nav-sprite
-      .nav-top-center
-        .nav-search
-          .nav-search__category
-            %span.nav-search__category__text すべて
-            %span.nav-search__category__image.nav-sprite
+    .header-nav-top
+      .header-nav-top-left
+        .header-nav-logo
+          = link_to "#", {class: "header-nav-logo-link", controller: "home", action: :index} do
+            %span.header-nav-logo__base.nav-sprite
+            %span.header-nav-logo__locale.nav-sprite
+            %span.header-nav-logo__prime.nav-sprite
+      .header-nav-top-center
+        .header-nav-search
+          .header-nav-search__category
+            %span.header-nav-search__category__text すべて
+            %span.header-nav-search__category__image.nav-sprite
 
-          %input.nav-search__textbox{type: "text"}
-          .nav-search__button
-            .nav-search__button__icon.nav-sprite
-      .nav-top-right
-        .nav-advertising
+          %input.header-nav-search__textbox{type: "text"}
+          .header-nav-search__button
+            .header-nav-search__button__icon.nav-sprite
+      .header-nav-top-right
+        .header-nav-advertising
           = link_to "#" do
             = image_tag("swm-800x78-180301-NonPrime-UdE8l._V500720195_.png", size: "400x39")
 
     / navigation-bar-bottom
-    .nav-bottom
-      .nav-bottom-left
-        .nav-receivers
-          %span.nav-receivers__icon.nav-sprite
-          .nav-receivers__address
-            %span.nav-receivers__address__name お届け先 明戸俊英さん
-            %span.nav-receivers__address__zip 650-0015
-      .nav-bottom-center
-        .nav-category
-          %span.nav-category__text カテゴリー
-          %span.nav-category__image.nav-sprite
-        .nav-my-store
-          .nav-my-store__top
-            %span.nav-my-store__top__text Amazonポイント:
-            %span.nav-my-store__top__point 100
-          .nav-my-store__bottom
+    .header-nav-bottom
+      .header-nav-bottom-left
+        .header-nav-receivers
+          %span.header-nav-receivers__icon.nav-sprite
+          .header-nav-receivers__address
+            %span.header-nav-receivers__address__name お届け先 明戸俊英さん
+            %span.header-nav-receivers__address__zip 650-0015
+      .header-nav-bottom-center
+        .header-nav-category
+          %span.header-nav-category__text カテゴリー
+          %span.header-nav-category__image.nav-sprite
+        .header-nav-my-store
+          .header-nav-my-store__top
+            %span.header-nav-my-store__top__text Amazonポイント:
+            %span.header-nav-my-store__top__point 100
+          .header-nav-my-store__bottom
             %ul
               %li マイストア
               %li タイムセール
               %li ギフト券
               %li Amazonで売る
               %li ヘルプ
-      .nav-bottom-right
-        .nav-global
-          %span.nav-global__lang JP
-          %span.nav-global__image.nav-sprite
-          %span.nav-global__icon.nav-sprite-global
-        .nav-vertical-border
-        .nav-account
-          %span.nav-account__top 明戸俊英さん
-          %span.nav-account__bottom アカウント＆リスト
-          %span.nav-account__image.nav-sprite
-        .nav-order-history
-          %span.nav-order-history__text 注文履歴
-        .nav-prime
-          %span.nav-prime__top 今すぐ確認
-          %span.nav-prime__bottom プライム
-          %span.nav-prime__image.nav-sprite
-        .nav-cart
-          %span.nav-cart__text カート
-          %span.nav-cart__icon.nav-sprite
-          %span.nav-cart__count 1
+      .header-nav-bottom-right
+        .header-nav-global
+          %span.header-nav-global__lang JP
+          %span.header-nav-global__image.nav-sprite
+          %span.header-nav-global__icon.nav-sprite-global
+        .header-nav-vertical-border
+        .header-nav-account
+          %span.header-nav-account__top 明戸俊英さん
+          %span.header-nav-account__bottom アカウント＆リスト
+          %span.header-nav-account__image.nav-sprite
+        .header-nav-order-history
+          %span.header-nav-order-history__text 注文履歴
+        .header-nav-prime
+          %span.header-nav-prime__top 今すぐ確認
+          %span.header-nav-prime__bottom プライム
+          %span.header-nav-prime__image.nav-sprite
+        .header-nav-cart
+          %span.header-nav-cart__text カート
+          %span.header-nav-cart__icon.nav-sprite
+          %span.header-nav-cart__count 1
