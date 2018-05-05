@@ -58,7 +58,7 @@
 }
 
 .footer-nav-top-bottom{
-  height: 98px;
+  height: 108px;
   padding: 10px 0 40px 0;
   background-color: #232F3E;
   border-top: 1px solid #3a4553;
@@ -66,14 +66,90 @@
 
 .footer-nav-global{
   width: 1000px;
+  height: 60px;
   margin: 0 auto;
+  text-align: center;
+
+  &__logo{
+    display: inline-block;
+    background-position: -10px -90px;
+    width: 76px;
+    height: 23px;
+    margin: 30px 0 15px 0;
+  }
+
+  &__container{
+    display: inline-block;
+    width: 226.5px;
+    height: 34px;
+    margin: 18px 0 0 70px;
+    vertical-align: top;
+
+    &__lang{
+      display: inline-block;
+      width: 113.19px;
+      height: 34px;
+      border: 1px solid #848688;
+      border-radius: 3px;
+      padding: 6px 10px 6px 8px;
+      vertical-align: top;
+
+      &__icon{
+        display: inline-block;
+        float: left;
+        background-position: -77px -24px;
+        width: 15px;
+        height: 15px;
+        margin-top: 2px;
+      }
+
+      &__text{
+        display: inline-block;
+        float: left;
+        padding: 0 7.8px;
+        margin-top: 2px;
+        font-size: 13px;
+        font-family: arial,sans-serif;
+        color: #ccc;
+      }
+
+      &__image{
+        width: 12px;
+        height: 12px;
+        background-position: -77px -80px;
+        float: right;
+        margin-top: 4px;
+      }
+    }
+
+    &__country{
+      display: inline-block;
+      width: 87.59px;
+      height: 34px; 
+      border: 1px solid #848688;
+      border-radius: 3px;
+      padding: 6px 18px 6px 8px;
+
+      &__icon{
+        display: inline-block;
+        float: left;
+        background-position: -18px -96px;
+        width: 18px;
+        height: 12px;
+        margin-top: 3px;
+      }
+
+      &__text{
+        display: inline-block;
+        padding: 0 7.8px;
+        font-size: 13px;
+        font-family: arial,sans-serif;
+        color: #ccc;
+      }
+    }
+  }
 }
-.footer-nav-logo{
-  display: inline-block;
-  background-position: 0 1000px;
-  width: 76px;
-  height: 23px;
-}
+
 
 // navigation-bar-bottom
 .footer-nav-bottom{
