@@ -189,13 +189,38 @@ header{
 
 .nav-bottom-center{
   float: left;
-  width: calc(100% - 192px - 533.328px);
+  width: calc(100% - 192px - 533.33px);
 }
 
 .nav-category{
   display: inline-block;
-  width: 109.406px;
+  width: 126.41px;
   height: 44px;
+  margin-top: 6px;
+  padding: 20px 15px 0 13px;
+  border: 1px solid #232F3E;
+
+  &__text{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    color: white;
+  }
+
+  &__image{
+    background-position: 0 1000px;
+    width: 8px;
+    height: 4px;
+    border: 4px solid transparent;
+    border-top: 4px solid #a7acb2;
+    margin: 8px 12px 0 0;
+    float: right;
+  }
+
+  &:hover{
+    border: 1px solid #4f5965;
+    border-radius: 3px;
+  }
 }
 
 .nav-my-store{
@@ -205,7 +230,7 @@ header{
 
 .nav-bottom-right{
   float: right;
-  width: 533.328px;
+  width: 533.33px;
   height: 55px;
   padding: 6px 7px 0 32px;
   font-size: 0;
@@ -257,12 +282,19 @@ header{
   }
 }
 
+.nav-vertical-border{
+  display: inline-block;
+  width: 0px;
+  height: 29px;
+  border-right: 1px solid #555;
+  margin-bottom: 5px;
+}
+
 .nav-account{
   display: inline-block;
   width: 161.53px;
   height: 44px;
   padding: 8px 0 0 9px;
-  margin: 0 1px 0 1px;
   border: 1px solid #232F3E;
   vertical-align: top;
 
@@ -303,7 +335,7 @@ header{
   width: 77.13px;
   height: 26px;
   padding: 5px 0 0 9px;
-  margin: 18px 1px 0 1px;
+  margin-top: 18px;
   border: 1px solid #232F3E;
   vertical-align: top;
 
@@ -325,7 +357,6 @@ header{
   width: 90.13px;
   height: 44px;
   padding: 13px 0 0 9px;
-  margin: 0 1px 0 1px;
   border: 1px solid #232F3E;
   vertical-align: top;
 
