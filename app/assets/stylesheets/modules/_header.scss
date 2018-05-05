@@ -1,8 +1,3 @@
-/* for style check */
-*{
-  // border: 0.1px dashed #FFF;
-}
-
 header{
 }
 
@@ -60,7 +55,6 @@ header{
   display: inline-block;
   float: left;
   width: calc(100% - 192px - 400px);
-  // width: calc(100% - 192px - 402px);
   height: 100%;
   padding: 11px 25px 0 0;
 }
@@ -213,17 +207,20 @@ header{
   float: right;
   width: 533.328px;
   height: 55px;
-  // padding: 6px 7px 0 32px;
+  padding: 6px 7px 0 32px;
+  font-size: 0;
 }
 
 .nav-global{
   display: inline-block;
-  width: 39.703px;
+  width: 48.7px;
   height: 44px;
-  border-right: 1px solid #555;
+  padding-left: 9px 0 0 9px;
+  border: 1px solid #232F3E;
+  vertical-align: top;
 
   &__lang{
-    float: left;
+    display: block;
     width: 14px;
     height: 14px;
     margin-top: 9px;
@@ -240,19 +237,23 @@ header{
     background-position: -77px -24px;
     width: 14px;
     height: 14px;
-    margin-top: 25px;
-    margin-left: 15px;
+    margin-right: 5px;
+    float: right;
   }
 
   &__image{
-    display: block;
     background-position: 0 1000px;
     width: 8px;
     height: 4px;
     border: 4px solid transparent;
     border-top: 4px solid #a7acb2;
-    margin-bottom: 5px;
-    margin-left: 35px;
+    margin: 6px 4px 0 0;
+    float: right;
+  }
+
+  &:hover{
+    border: 1px solid #4f5965;
+    border-radius: 3px;
   }
 }
 
@@ -260,8 +261,8 @@ header{
   display: inline-block;
   width: 161.53px;
   height: 44px;
-  padding: 5px 0 0 9px;
-  margin: 7px 1px 0 1px;
+  padding: 8px 0 0 9px;
+  margin: 0 1px 0 1px;
   border: 1px solid #232F3E;
   vertical-align: top;
 
@@ -271,7 +272,7 @@ header{
     font-size: 12px;
     font-weight: 400;
     color: #ccc;
-    line-height: 18px;
+    line-height: 16px;
   }
 
   &__bottom{
@@ -287,7 +288,7 @@ header{
     height: 4px;
     border: 4px solid transparent;
     border-top: 4px solid #a7acb2;
-    margin: 8px 10px 0 0;
+    margin: 6px 10px 0 0;
     float: right;
   }
 
@@ -301,8 +302,8 @@ header{
   display: inline-block;
   width: 77.13px;
   height: 26px;
-  padding: 2px 0 0 9px;
-  margin: 25px 1px 0 1px;
+  padding: 5px 0 0 9px;
+  margin: 18px 1px 0 1px;
   border: 1px solid #232F3E;
   vertical-align: top;
 
@@ -323,8 +324,8 @@ header{
   display: inline-block;
   width: 90.13px;
   height: 44px;
-  padding: 10px 0 0 9px;
-  margin: 7px 1px 0 1px;
+  padding: 13px 0 0 9px;
+  margin: 0 1px 0 1px;
   border: 1px solid #232F3E;
   vertical-align: top;
 
@@ -333,7 +334,7 @@ header{
     font-size: 12px;
     font-weight: 400;
     color: #ccc;
-    line-height: 10px;
+    line-height: 12px;
   }
 
   &__bottom{
@@ -349,7 +350,7 @@ header{
     height: 4px;
     border: 4px solid transparent;
     border-top: 4px solid #a7acb2;
-    margin: 8px 10px 0 0;
+    margin: 6px 10px 0 0;
     float: right;
   }
 
@@ -364,7 +365,6 @@ header{
   position: relative;
   width: 106.844px;
   height: 44px;
-  top: 6px;
   border: 1px solid #232F3E;
 
   &__icon{
