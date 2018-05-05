@@ -299,8 +299,24 @@ header{
 
 .nav-order-history{
   display: inline-block;
-  width: 66.125px;
+  width: 77.13px;
   height: 26px;
+  padding: 3px 0 0 9px;
+  margin: 25px 1px 0 1px;
+  border: 1px solid #232F3E;
+  vertical-align: top;
+
+  &__text{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    color: white;
+  }
+
+  &:hover{
+    border: 1px solid #4f5965;
+    border-radius: 3px;
+  }
 }
 
 .nav-prime{
