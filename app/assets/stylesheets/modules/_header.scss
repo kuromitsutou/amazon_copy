@@ -245,16 +245,20 @@
   }
 
   &__bottom{
-    ul li{
-      margin: 0 10px 0 0;
-      font-size: 13px;
-      font-family: arial,sans-serif;
-      color: #ccc;
-      float: left;
-    }
 
-    ul li:not(:first-child){
-      margin: 0 10px 0 10px;
+    &__list{
+
+      &__item{
+        margin: 0 10px 0 0;
+        font-size: 13px;
+        font-family: arial,sans-serif;
+        color: #ccc;
+        float: left;
+      }
+
+      &__item::not(:first-child){
+        margin: 0 10px 0 10px;
+      }
     }
   }
 }
