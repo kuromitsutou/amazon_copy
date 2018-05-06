@@ -256,7 +256,7 @@
         float: left;
       }
 
-      &__item::not(:first-child){
+      &__item:not(:first-child){
         margin: 0 10px 0 10px;
       }
     }
