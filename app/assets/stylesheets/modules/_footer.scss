@@ -188,4 +188,35 @@
 
 .footer-nav-bottom-bottom{
   height: 58px;
+  text-align: center;
+}
+
+.footer-nav-copyright{
+  display: inline-block;
+  padding: 10px 0 30px 0;
+
+  &__list{
+    float: left;
+
+    &__item{
+      float: left;
+      padding: 0 7.2px;
+      font-size: 12px;
+      font-family: arial,sans-serif;
+      color: #ddd;
+      border-right: 1px solid #ddd;
+
+      &--last{
+        border-width: 0px;
+      }
+    }
+  }
+
+  &__text{
+    float: left;
+    padding: 0 7.2px;
+    font-size: 12px;
+    font-family: arial,sans-serif;
+    color: #767676;
+  }
 }
