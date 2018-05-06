@@ -1,0 +1,228 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-navbar{
+  min-width: 1000px;
+  height: 700px;
+  margin-top: 30px;
+}
+
+// navigation-bar-top
+.footer-nav-top-top{
+  height: 49px;
+  background-color: #37475A;
+  padding: 15px 0 15px 0;
+  font-size: 13px;
+  font-family: arial,sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.footer-nav-top-middle{
+  height: 341px;
+  background-color: #232F3E;
+  padding: 40px 0;
+}
+
+.footer-nav-menu-table{
+  width: 1000px;
+  margin: 0 auto;
+
+  &__body__row__data{
+    padding: 0 10px;
+    vertical-align: top;
+
+    &--space{
+      width: 75px;
+    }
+
+    &__list__item{
+      font-size: 13px;
+      font-family: arial,sans-serif;
+      color: #ddd;
+      line-height: 120%;
+      margin-bottom: 10px;
+
+      &--header{
+        margin: 6px 0 14px 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+      }
+
+      &__carat{
+        font-size: 15px;
+        font-family: arial,sans-serif;
+        font-weight: 700;
+        color: #ddd;
+      }
+    }
+  }
+}
+
+.footer-nav-top-bottom{
+  height: 108px;
+  padding: 10px 0 40px 0;
+  background-color: #232F3E;
+  border-top: 1px solid #3a4553;
+}
+
+.footer-nav-global{
+  width: 1000px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__logo{
+    display: inline-block;
+    background-position: -10px -90px;
+    width: 76px;
+    height: 23px;
+    margin: 30px 0 15px 0;
+  }
+
+  &__container{
+    display: inline-block;
+    width: 226.5px;
+    height: 34px;
+    margin: 18px 0 0 70px;
+    vertical-align: top;
+
+    &__lang{
+      display: inline-block;
+      width: 113.19px;
+      height: 34px;
+      border: 1px solid #848688;
+      border-radius: 3px;
+      padding: 6px 10px 6px 8px;
+      vertical-align: top;
+
+      &__icon{
+        display: inline-block;
+        float: left;
+        background-position: -77px -24px;
+        width: 15px;
+        height: 15px;
+        margin-top: 2px;
+      }
+
+      &__text{
+        display: inline-block;
+        float: left;
+        padding: 0 7.8px;
+        margin-top: 2px;
+        font-size: 13px;
+        font-family: arial,sans-serif;
+        color: #ccc;
+      }
+
+      &__image{
+        width: 12px;
+        height: 12px;
+        background-position: -77px -80px;
+        float: right;
+        margin-top: 4px;
+      }
+    }
+
+    &__country{
+      display: inline-block;
+      width: 87.59px;
+      height: 34px; 
+      border: 1px solid #848688;
+      border-radius: 3px;
+      padding: 6px 18px 6px 8px;
+
+      &__icon{
+        display: inline-block;
+        float: left;
+        background-position: -18px -96px;
+        width: 18px;
+        height: 12px;
+        margin-top: 3px;
+      }
+
+      &__text{
+        display: inline-block;
+        padding: 0 7.8px;
+        font-size: 13px;
+        font-family: arial,sans-serif;
+        color: #ccc;
+      }
+    }
+  }
+}
+
+
+// navigation-bar-bottom
+.footer-nav-bottom{
+  background-color: #131A22;
+}
+
+.footer-nav-bottom-top{
+  height: 143px;
+  padding: 30px 0 30px 0;
+}
+
+.footer-nav-bottom-table{
+  width: 1000px;
+  margin: 0 auto;
+
+  &__body__row__data{
+    padding: 0 8.25px;
+
+    &__title{
+      font-size: 11px;
+      font-family: arial,sans-serif;
+      color: #ddd;
+    }
+
+    &__detail{
+      font-size: 10px;
+      font-family: arial,sans-serif;
+      color: #999;
+    }
+
+    &--space{
+      width: 20px;
+    }
+  }
+}
+
+.footer-nav-bottom-bottom{
+  height: 58px;
+  text-align: center;
+}
+
+.footer-nav-copyright{
+  display: inline-block;
+  padding: 10px 0 30px 0;
+
+  &__list{
+    float: left;
+
+    &__item{
+      float: left;
+      padding: 0 7.2px;
+      font-size: 12px;
+      font-family: arial,sans-serif;
+      color: #ddd;
+      border-right: 1px solid #ddd;
+
+      &--last{
+        border-width: 0px;
+      }
+    }
+  }
+
+  &__text{
+    float: left;
+    padding: 0 7.2px;
+    font-size: 12px;
+    font-family: arial,sans-serif;
+    color: #767676;
+  }
+}
