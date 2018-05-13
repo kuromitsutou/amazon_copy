@@ -16,7 +16,6 @@ footer{
   background-color: #37475A;
   padding: 15px 0 15px 0;
   font-size: 13px;
-  font-family: arial,sans-serif;
   color: white;
   text-align: center;
 }
@@ -41,7 +40,6 @@ footer{
 
     &__list__item{
       font-size: 13px;
-      font-family: arial,sans-serif;
       color: #ddd;
       line-height: 120%;
       margin-bottom: 10px;
@@ -55,7 +53,6 @@ footer{
 
       &__carat{
         font-size: 15px;
-        font-family: arial,sans-serif;
         font-weight: 700;
         color: #ddd;
       }
@@ -115,7 +112,6 @@ footer{
         padding: 0 7.8px;
         margin-top: 2px;
         font-size: 13px;
-        font-family: arial,sans-serif;
         color: #ccc;
       }
 
@@ -149,7 +145,6 @@ footer{
         display: inline-block;
         padding: 0 7.8px;
         font-size: 13px;
-        font-family: arial,sans-serif;
         color: #ccc;
       }
     }
@@ -176,13 +171,11 @@ footer{
 
     &__title{
       font-size: 11px;
-      font-family: arial,sans-serif;
       color: #ddd;
     }
 
     &__detail{
       font-size: 10px;
-      font-family: arial,sans-serif;
       color: #999;
     }
 
@@ -208,7 +201,6 @@ footer{
       float: left;
       padding: 0 7.2px;
       font-size: 12px;
-      font-family: arial,sans-serif;
       color: #ddd;
       border-right: 1px solid #ddd;
 
@@ -222,7 +214,6 @@ footer{
     float: left;
     padding: 0 7.2px;
     font-size: 12px;
-    font-family: arial,sans-serif;
     color: #767676;
   }
 }
