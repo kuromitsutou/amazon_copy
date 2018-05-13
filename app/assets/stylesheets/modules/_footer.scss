@@ -1,5 +1,5 @@
 footer{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -15,7 +15,6 @@ footer{
   height: 49px;
   background-color: #37475A;
   padding: 15px 0 15px 0;
-  font-size: 13px;
   color: white;
   text-align: center;
 }
@@ -32,17 +31,18 @@ footer{
 
   &__body__row__data{
     padding: 0 10px;
+    line-height: 120%;
     vertical-align: top;
 
     &--space{
-      width: 75px;
+      width: 10%;
     }
 
     &__list__item{
-      font-size: 13px;
       color: #ddd;
       line-height: 120%;
       margin-bottom: 10px;
+      white-space: nowrap;
 
       &--header{
         margin: 6px 0 14px 0;
@@ -111,7 +111,6 @@ footer{
         float: left;
         padding: 0 7.8px;
         margin-top: 2px;
-        font-size: 13px;
         color: #ccc;
       }
 
@@ -144,7 +143,6 @@ footer{
       &__text{
         display: inline-block;
         padding: 0 7.8px;
-        font-size: 13px;
         color: #ccc;
       }
     }
@@ -171,11 +169,13 @@ footer{
 
     &__title{
       font-size: 11px;
+      line-height: 115%;
       color: #ddd;
     }
 
     &__detail{
       font-size: 10px;
+      line-height: 110%;
       color: #999;
     }
 
@@ -193,6 +193,7 @@ footer{
 .footer-nav-copyright{
   display: inline-block;
   padding: 10px 0 30px 0;
+  line-height: 18px;
 
   &__list{
     float: left;
