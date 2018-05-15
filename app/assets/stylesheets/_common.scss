@@ -15,21 +15,38 @@ h1, h2, h3, h4 {
 }
 
 h1{
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 28px;
   line-height: 1.2;
 }
 
+h4 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.255;
+}
+
 a{
+  text-decoration:none;
+
   &:hover{
     cursor: pointer;
+    text-decoration: underline;
   }
 }
 
-.nav-sprite{
+.sprite-bluebeacon{
   background-image: url(https://images-fe.ssl-images-amazon.com/images/G/09/gno/sprites/nav-sprite-global_bluebeacon-V3-1x_optimized._CB516557390_.png);
 }
 
-.nav-sprite-global{
+.sprite-user{
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+}
+
+.sprite-user2{
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_jp_1x-f8582354fc42b464ef5eb709dd98f9371d3eafea._V2_.png)
+}
+
+.sprite-global{
   background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/InternationalCustomerPreferencesNavAssets-icp_sprite-7d1bfde38eb13748605e178896ede63a4aa68e0c._V2_.png);
 }

@@ -5,19 +5,19 @@
     .header-nav-top
       .header-nav-top-left
         .header-nav-logo
-          = link_to "#", {class: "header-nav-logo-link", controller: "home", action: :index} do
-            %span.header-nav-logo__base.nav-sprite
-            %span.header-nav-logo__locale.nav-sprite
-            %span.header-nav-logo__prime.nav-sprite
+          = link_to root_path do
+            %span.header-nav-logo__base.sprite-bluebeacon
+            %span.header-nav-logo__locale.sprite-bluebeacon
+            %span.header-nav-logo__prime.sprite-bluebeacon
       .header-nav-top-center
         .header-nav-search
           .header-nav-search__category
             %span.header-nav-search__category__text すべて
-            %span.header-nav-search__category__image.nav-sprite
+            %span.header-nav-search__category__image.sprite-bluebeacon
 
           %input.header-nav-search__textbox{type: "text"}
           .header-nav-search__button
-            .header-nav-search__button__icon.nav-sprite
+            .header-nav-search__button__icon.sprite-bluebeacon
       .header-nav-top-right
         .header-nav-advertising
           = link_to "#" do
@@ -27,14 +27,14 @@
     .header-nav-bottom
       .header-nav-bottom-left
         .header-nav-receivers
-          %span.header-nav-receivers__icon.nav-sprite
+          %span.header-nav-receivers__icon.sprite-bluebeacon
           .header-nav-receivers__address
             %span.header-nav-receivers__address__name お届け先 明戸俊英さん
             %span.header-nav-receivers__address__zip 650-0015
       .header-nav-bottom-center
         .header-nav-category
           %span.header-nav-category__text カテゴリー
-          %span.header-nav-category__image.nav-sprite
+          %span.header-nav-category__image.sprite-bluebeacon
         .header-nav-my-store
           .header-nav-my-store__top
             %span.header-nav-my-store__top__text Amazonポイント:
@@ -49,20 +49,20 @@
       .header-nav-bottom-right
         .header-nav-global
           %span.header-nav-global__lang JP
-          %span.header-nav-global__image.nav-sprite
-          %span.header-nav-global__icon.nav-sprite-global
+          %span.header-nav-global__image.sprite-bluebeacon
+          %span.header-nav-global__icon.sprite-global
         .header-nav-vertical-border
         .header-nav-account
           %span.header-nav-account__top 明戸俊英さん
           %span.header-nav-account__bottom アカウント＆リスト
-          %span.header-nav-account__image.nav-sprite
+          %span.header-nav-account__image.sprite-bluebeacon
         .header-nav-order-history
           %span.header-nav-order-history__text 注文履歴
         .header-nav-prime
           %span.header-nav-prime__top 今すぐ確認
           %span.header-nav-prime__bottom プライム
-          %span.header-nav-prime__image.nav-sprite
+          %span.header-nav-prime__image.sprite-bluebeacon
         .header-nav-cart
           %span.header-nav-cart__text カート
-          %span.header-nav-cart__icon.nav-sprite
+          %span.header-nav-cart__icon.sprite-bluebeacon
           %span.header-nav-cart__count 1
