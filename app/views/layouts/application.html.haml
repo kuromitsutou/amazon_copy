@@ -10,4 +10,5 @@
   %body
     = render "shared/header" if @display_condition
     = yield
+    = render "shared/recent_history" if @display_condition
     = render "shared/footer" if @display_condition

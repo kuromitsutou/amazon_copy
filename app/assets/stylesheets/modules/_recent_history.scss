@@ -1,0 +1,62 @@
+.recent_history{
+  height: 178px;
+  padding: 20px 0;
+
+  .recent_history-container{
+    height: 138px;
+    min-width: 940px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    &__title{
+      display: inline-block;
+      padding: 10px 10px 3px;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    &__signin{
+      height: 68px;
+      margin: 19px 0 17px;
+      padding: 0 20px;
+      text-align: center;
+
+      &__title{
+        line-height: 15px;
+      }
+
+      &__button{
+        display: inline-block;
+        width: 230px;
+        height: 28px;
+        margin: 5px 0;
+        background-position: -10px -170px;
+        line-height: 28px;
+        font-weight: 700;
+        color: black;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      &__registration{
+
+        &__text{
+          font-size: 11px;
+          line-height: 15px;
+        }
+
+        &__link{
+          font-size: 11px;
+          line-height: 15px;
+
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.recent_history
+  .recent_history-container
+    .recent_history-container__title 最近閲覧した商品とおすすめ商品
+
+    - if user_signed_in?
+
+    - else
+      .recent_history-container__signin
+        .recent_history-container__signin__title お客様へのおすすめ商品を表示
+        = link_to "サインイン", new_user_session_path, class: "recent_history-container__signin__button sprite-recent-history"
+        .recent_history-container__signin__registration
+          %span.recent_history-container__signin__registration__text 初めてご利用ですか?
+          = link_to "新規登録はこちら", new_user_registration_path, class: "recent_history-container__signin__registration__link"
