@@ -1,10 +1,20 @@
-%h2 Forgot your password?
-= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
-  = devise_error_messages!
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .actions
-    = f.submit "Send me reset password instructions"
-= render "devise/shared/links"
+.user-wrapper
+  = render "devise/shared/header"
+
+  .user-box
+    %h1 パスワードアシスタント
+    %p
+      Amazonアカウントに関連付けられているEメールアドレスまたは携帯電話番号を入力してください。
+    = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+      = devise_error_messages!
+      .field.bottom-margin-l
+        = f.label :email, "Eメールアドレス"
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "text"
+      .actions
+        = f.submit "次へ進む", class: "yellow-button"
+
+  %h4 Eメールアドレスを変更しましたか？
+  %p
+    お客様のAmazonアカウントに関連付けられているEメールアドレスをもはや使用されていない場合は、カスタマーサービスに連絡して、アカウントへのアクセスを復元することができます。
+
+  = render "devise/shared/footer"

@@ -1,27 +1,21 @@
+- provide(:title, "AmazonCopyサインイン")
 .user-wrapper
   = render "devise/shared/header"
 
-  .user-box
+  .user-box.login-box.bottom-margin-l
     %h1.bottom-margin-s ログイン
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .field.bottom-margin-base
         = f.label :email, "Eメールまたは携帯電話番号"
         = f.email_field :email, autofocus: true, autocomplete: "email", class: "text"
-      .field.bottom-margin-l
-        = f.label :password, "パスワード"
-        = link_to "パスワードを忘れた場合", new_password_path(resource_name), class: "forgot_password"
-        = f.password_field :password, autocomplete: "off", class: "text"
-      .actions.bottom-margin-m
-        = f.submit "ログイン", class: "yellow-button"
-      .field.remember_me
-        = f.check_box :remember_me, class: "remember_me__check"
-        = f.label :remember_me, "ログインしたままにする", class: "remember_me__label"
-        = link_to "#" do
-          詳細
-          %span.remember_me__icon.sprite-user
+      .actions.bottom-margin-l
+        = f.submit "次へ進む", class: "yellow-button"
+      .expander
+        .expander__image.sprite-user
+        お困りですか?
 
-      .horizontal-line
-        %h5 Amazonの新しいお客様ですか？
-      = link_to "Amazonアカウントを作成", new_registration_path(resource_name), class: "registration-button"
+  .user-signin-box
+    %h5.bottom-margin-base Amazonの新しいお客様ですか？
+    = link_to "Amazonアカウントを作成", new_registration_path(resource_name), class: "registration-button"
 
   = render "devise/shared/footer"

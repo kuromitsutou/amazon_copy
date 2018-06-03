@@ -8,7 +8,25 @@
           = link_to root_path do
             %span.header-nav-logo__base.sprite-bluebeacon
             %span.header-nav-logo__locale.sprite-bluebeacon
-            %span.header-nav-logo__prime.sprite-bluebeacon
+            - if user_signed_in?
+              %span.header-nav-logo__prime.sprite-bluebeacon
+            - else
+              .header-nav-logo__not_prime
+                = link_to "#", class: "header-nav-logo__not_prime__text" do
+                  プライムを始める
+
+                / popover
+                .not_prime-popover
+                  .not_prime-popover__leftspace
+                    .not_prime-popover__leftspace__arrow
+                  .not_prime-popover__whitespace
+                    .not_prime-popover__whitespace__title Amazonプライム会員ならお急ぎ便、日時指定便が使い放題
+                    .not_prime-popover__whitespace__detail
+                      さらに、映画もTV番組も見放題。100万曲以上が聴き放題。クラウドに好きなだけ写真も保存可能。
+                    .not_prime-popover__whitespace__detail
+                      >
+                      = link_to "プライムを無料で試す", "#"
+
       .header-nav-top-center
         .header-nav-search
           .header-nav-search__category
@@ -29,16 +47,23 @@
         .header-nav-receivers
           %span.header-nav-receivers__icon.sprite-bluebeacon
           .header-nav-receivers__address
-            %span.header-nav-receivers__address__name お届け先 明戸俊英さん
-            %span.header-nav-receivers__address__zip 650-0015
+            - if user_signed_in?
+              %span.header-nav-receivers__address__name お届け先 明戸俊英さん
+              %span.header-nav-receivers__address__zip 650-0015
+            - else
+              %span.header-nav-receivers__address__name お届け先
+              %span.header-nav-receivers__address__zip 東京 102-0082
       .header-nav-bottom-center
         .header-nav-category
           %span.header-nav-category__text カテゴリー
           %span.header-nav-category__image.sprite-bluebeacon
         .header-nav-my-store
           .header-nav-my-store__top
-            %span.header-nav-my-store__top__text Amazonポイント:
-            %span.header-nav-my-store__top__point 100
+            %span.header-nav-my-store__top__text Amazonポイント: 
+            - if user_signed_in?
+              %span.header-nav-my-store__top__point 100
+            - else
+              %span.header-nav-my-store__top__not_point 残高を確認
           .header-nav-my-store__bottom
             %ul.header-nav-my-store__bottom__list
               %li.header-nav-my-store__bottom__list__item マイストア
@@ -53,13 +78,57 @@
           %span.header-nav-global__icon.sprite-global
         .header-nav-vertical-border
         .header-nav-account
-          %span.header-nav-account__top 明戸俊英さん
+          - if user_signed_in?
+            %span.header-nav-account__top 明戸俊英さん
+          - else
+            %span.header-nav-account__top こんにちは。サインイン
           %span.header-nav-account__bottom アカウント＆リスト
           %span.header-nav-account__image.sprite-bluebeacon
+
+          / popover
+          .nav-account-popover
+            .nav-account-popover__arrow
+            .nav-account-popover__container
+              .nav-account-popover__container__signin
+                = link_to "サインイン", new_user_session_path, class: "nav-account-popover__container__signin__button"
+                .nav-account-popover__container__signin__text 
+                  初めてご利用ですか?
+                  = link_to "新規登録はこちら", new_user_registration_path, class: "nav-account-popover__signin__link"
+              .nav-account-popover__container__left
+                %ul.nav-account-popover__container__left__list
+                  %li.nav-account-popover__container__left__list__item.nav-account-popover__container__left__list__item--header リスト
+                  %li.nav-account-popover__container__left__list__item ほしい物リストを作成する
+                  %li.nav-account-popover__container__left__list__item ほしい物リストを見つける
+                  %li.nav-account-popover__container__left__list__item 何でもほしい物リスト
+              .nav-account-popover__container__right
+                %ul.nav-account-popover__container__left__list
+                  %li.nav-account-popover__container__right__list__item.nav-account-popover__container__right__list__item--header アカウントサービス
+                  %li.nav-account-popover__container__right__list__item アカウントサービス
+                  %li.nav-account-popover__container__right__list__item 注文履歴
+                  %li.nav-account-popover__container__right__list__item ほしい物リスト
+                  %li.nav-account-popover__container__right__list__item おすすめ商品
+                  %li.nav-account-popover__container__right__list__item ご利用中の定期おトク便の変更・停止
+                  %li.nav-account-popover__container__right__list__item Amazonプライム会員情報
+                  %li.nav-account-popover__container__right__list__item Amazon Businessアカウント
+                  %li.nav-account-popover__container__right__list__item--line
+                  %li.nav-account-popover__container__right__list__item コンテンツと端末の管理
+                  %li.nav-account-popover__container__right__list__item Prime Music
+                  %li.nav-account-popover__container__right__list__item ミュージックライブラリにアクセス
+                  %li.nav-account-popover__container__right__list__item お客様のAmazon Drive
+                  %li.nav-account-popover__container__right__list__item ウォッチリスト
+                  %li.nav-account-popover__container__right__list__item ビデオライブラリ
+                  %li.nav-account-popover__container__right__list__item お客様の Kindle Unlimited
+                  %li.nav-account-popover__container__right__list__item マンガ本棚
+                  %li.nav-account-popover__container__right__list__item ゲーム&PCソフトダウンロードライブラリ
+                  %li.nav-account-popover__container__right__list__item アプリライブラリとデバイスの管理
+
         .header-nav-order-history
           %span.header-nav-order-history__text 注文履歴
         .header-nav-prime
-          %span.header-nav-prime__top 今すぐ確認
+          - if user_signed_in?
+            %span.header-nav-prime__top 今すぐ確認
+          - else
+            %span.header-nav-prime__top 今すぐ登録
           %span.header-nav-prime__bottom プライム
           %span.header-nav-prime__image.sprite-bluebeacon
         .header-nav-cart

@@ -1,8 +1,10 @@
+- provide(:title)
 !!!
 %html
   %head
     %meta{ content: "text/html; charset=UTF-8", http: { equiv: "Content-Type"} }/
-    %title AmazonCopy | 本, ファッション, 家電から食品まで | アマゾン
+    %title
+      = set_title(yield(:title))
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
